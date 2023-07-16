@@ -1,0 +1,157 @@
+<html>
+<head>
+
+<style rel='stylesheet'>
+
+
+#preview_top { width: 7000px;
+		padding: 100px; }
+
+
+#preview_bottom { width: 7000px;
+                padding: 100px;
+		margin-left: 1000px;
+		margin_bottom: 50px; }
+
+#content {
+	float: left;
+	width: 7000px;
+	padding: 50px;
+    } 
+
+.child {
+	font-size: 9px;
+	top: 0;
+	left: 0;
+	position: relative;
+	padding: 105px;
+	margin-left: 100px;
+	margin-right: 100px;
+	width: 600px;
+	float: left; 
+        border: 1px dotted blue;
+         }
+
+
+.child_top, .child_bottom {
+        font-size: 39px;
+        top: 0;
+        left: 0;
+        position: relative;
+        padding: 105px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 1500px;
+        float: left;
+        border: 1px dotted red;
+         }
+
+
+</style>
+
+<script src='./data_nurture.js'></script>
+
+<script>
+
+
+function createElement(str, i) {
+
+     var divchild = document.createElement('div');
+     divchild.classList.add("child");
+     divchild.innerHTML = str[i].mail;
+
+    return divchild;
+
+    
+
+}
+
+
+function createElementTop(str, i) {
+
+     var divchild2 = document.createElement('div');
+     divchild2.classList.add("child_top");
+     divchild2.innerHTML = str[i].mail;
+
+    return divchild2;
+
+}
+
+
+function createElementBottom(str, i) {
+
+     var divchild3 = document.createElement('div');
+     divchild3.classList.add("child_bottom");
+     divchild3.innerHTML = str[i].mail;
+
+    return divchild3;
+
+}
+
+
+</script>
+</head>
+
+<body>
+
+<div id="preview_top"></div>
+
+<div id="content"></div>
+
+<div id="preview_bottom"></div>
+
+</body>
+
+<script>
+
+window.onload = function() {
+
+ var cart_div = document.getElementById("content");
+ var elementos = "";
+
+for (var i = 0; i < str_data.length; i++) {
+ elemento = createElement(str_data, i);
+ elementos += elemento.outerHTML;
+};
+
+ cart_div.innerHTML += elementos;
+
+
+
+
+
+var preview_div = document.getElementById("preview_top");
+ var elementos2 = "";
+
+for (var i = 0; i < str_data.length; i++) {
+
+if (i%2==0) {
+ elemento2 = createElementTop(str_data, i);
+ elementos2 += elemento2.outerHTML;
+
+}
+}
+
+ preview_div.innerHTML += elementos2;
+
+
+
+var preview_div_bottom = document.getElementById("preview_bottom");
+ var elementos3 = "";
+
+for (var i = 0; i < str_data.length; i++) {
+
+if (i%2==1) {
+ elemento3 = createElementBottom(str_data, i);
+ elementos3 += elemento3.outerHTML;
+
+}
+}
+
+ preview_div_bottom.innerHTML += elementos3;
+
+};
+
+</script>
+
+</html>
