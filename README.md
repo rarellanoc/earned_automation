@@ -25,8 +25,8 @@ requires convert_indoc.py or convert_nurture.py
 
 ```
 cp Documents/01.txt data_nurture/01.txt 
-python convert_indoc.py
-python convert_nurture.py
+python convert_nurture.py > data_nurture.js
+python -m SimpleHTTPServer
 ```
 
 to view:
