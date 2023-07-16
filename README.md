@@ -32,7 +32,11 @@ python -m SimpleHTTPServer
 to view:
 
 ```
-customer_journey_indoc.html
+customer_journey_nurture.html
+```
+or
+```
+localhost:8000
 ```
 
 
