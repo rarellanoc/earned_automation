@@ -53,6 +53,21 @@ git commit -m ‘message’
 git push origin master
 ```
 
+## Dissemination calendar
 
+A python file to print a calendar (made from scratch, warning) and some repetition event (like a social media schedule). Works for this year, or you have to change the first day of the year weekday (currently: 7). 
 
+I have another that handles multiple events, but it's too tailored and patchy for now. 
+
+You can call it by the flags like this: 
+
+-d or --day (the day you start tracking the repetition)
+-m or --month (the month of that day)
+-r or --repeat (in days)
+
+```shell
+python dissemination_repeat.py -d 12 -m 7 -r 30 -r2 10 --csv=1 > output.csv
+```
+
+csv 1 or 0 changes between commas and tabs. 
 
