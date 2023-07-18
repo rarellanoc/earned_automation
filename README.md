@@ -66,7 +66,7 @@ You can call it by the flags like this:
 -r or --repeat (in days)
 
 ```shell
-python dissemination_repeat.py -d 12 -m 7 -r 30 -r2 10 --csv=1 > output.csv
+python dissemination_repeat.py -d 12 -m 7 -r 30 --csv=1 > output.csv
 ```
 
 csv 1 or 0 changes between commas and tabs. 
