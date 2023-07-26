@@ -57,7 +57,6 @@ git push origin master
 
 A python file to print a calendar (made from scratch, warning) and some repetition event (like a social media schedule). Works for this year, or you have to change the first day of the year weekday (currently: 7). 
 
-I have another that handles multiple events, but it's too tailored and patchy for now. 
 
 You can call it by the flags like this: 
 
@@ -68,6 +67,15 @@ You can call it by the flags like this:
 ```shell
 python dissemination_repeat.py -d 12 -m 7 -r 30 --csv=1 > output.csv
 ```
+or
+
+```shell
+python dissemination_multi.py -y 12 7 30 -i 17 7 2 -n 15 7 15 -l 12 7 15 --csv=1 > output_multi.csv
+```
+
+For instance: y (youtube) starting 12/7 each 30 days. Same for i (instagram), n (newsletter) and l (live). 
+
+
 
 csv 1 or 0 changes between commas and tabs. 
 
