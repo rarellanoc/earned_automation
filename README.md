@@ -75,13 +75,17 @@ python dissemination_multi.py -y 12 7 30 -i 17 7 2 -n 15 7 15 -l 12 7 15 --csv=1
 
 For instance: y (youtube) starting 12/7 each 30 days. Same for i (instagram), n (newsletter) and l (live). 
 
+csv 1 or 0 changes between commas and tabs. 
 
-This third one (not tested yet propperly) but works fine for longer periods (in a two year span). Labels removed.
+or
+
+
+This third one (not tested yet properly) but works fine for longer periods (in a two year span). Labels removed.
 
 ```shell
 python dissemination_long_period.py -a 28 4 180 -b 28 5 180 -c 26 4 180 -d 27 4 180 > output_ipc_test.csv
 ```
 
 
-csv 1 or 0 changes between commas and tabs. 
+
 
