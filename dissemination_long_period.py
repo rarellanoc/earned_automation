@@ -99,7 +99,7 @@ for sm_index in range(4):
 				for i in range(mo):
 					accum_mo = accum_mo + months_len[i+1]
 
-				print('accum_mo '+str(accum_mo-30))
+				#print('accum_mo '+str(accum_mo-30))
 				accum_mo_b=0
                                 for i in range(mo + (repeat_num/30)+1):
 					try:
@@ -107,9 +107,9 @@ for sm_index in range(4):
 					except KeyError:
 						accum_mo_b = 0	
 
-				print('accum_mo_b '+str(accum_mo_b-30))
-                		print(day)
-				print(repeat_num)
+				#print('accum_mo_b '+str(accum_mo_b-30))
+                		#print(day)
+				#print(repeat_num)
 				next_ocasion_day = day -300 
                 		next_ocasion_mo = mo + (repeat_num/30) - 2
 				pair_clean = [next_ocasion_day, next_ocasion_mo]
