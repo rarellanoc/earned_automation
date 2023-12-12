@@ -1,5 +1,5 @@
 #! /bin/bash
-export MAGICK_HOME="$HOME/ImageMagick-7.0.10"
+export MAGICK_HOME="$HOME/Downloads"
 export PATH="$MAGICK_HOME/bin:$PATH"
 export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
 i=1
