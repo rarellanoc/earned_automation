@@ -14,7 +14,10 @@ mv sample_100.csv sample.csv
 sed 's/    /;/g'  sample.csv > sample2.csv
 ./readcsv.sh
 ```
-
+### troubleshooting tips
+'
+the tab in the 'sed' utility might be achieved by: 'Ctrl + V', and then hit the tab in keyboard. 
+magick is now portable, but it requires 'chmod a+x magick'. 
 
 
 ## Mail preview
